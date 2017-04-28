@@ -1,6 +1,6 @@
 {
   "name": "customary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prevents form submission after native validation has taken place.",
   "main": "lib/jack.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanArthurGallagher/formal.git"
+    "url": "git+https://github.com/DanArthurGallagher/customary.git"
   },
   "keywords": [
     "front-end"
@@ -21,9 +21,9 @@
   "author": "Daniel Arthur Gallagher",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanArthurGallagher/formal/issues"
+    "url": "https://github.com/DanArthurGallagher/customary/issues"
   },
-  "homepage": "https://github.com/DanArthurGallagher/formal#readme",
+  "homepage": "https://github.com/DanArthurGallagher/customary#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.4.0",
