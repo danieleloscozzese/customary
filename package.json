@@ -1,0 +1,42 @@
+{
+  "name": "customary",
+  "version": "1.0.0",
+  "description": "Prevents form submission after native validation has taken place.",
+  "main": "lib/jack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow",
+    "build:transpile": "babel src --out-dir lib",
+    "build:type": "flow-copy-source -v src lib",
+    "build": "npm run build:transpile && npm run build:type",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanArthurGallagher/formal.git"
+  },
+  "keywords": [
+    "front-end"
+  ],
+  "author": "Daniel Arthur Gallagher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanArthurGallagher/formal/issues"
+  },
+  "homepage": "https://github.com/DanArthurGallagher/formal#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.45.0",
+    "flow-copy-source": "^1.1.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 1 Safari version",
+    "last 1 iOS version",
+    "last 1 Samsung version",
+    "last 1 Edge version"
+  ]
+}
