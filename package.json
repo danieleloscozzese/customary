@@ -1,6 +1,6 @@
 {
   "name": "customary",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Prevents form submission after native validation has taken place.",
   "main": "lib/jack.js",
   "scripts": {
