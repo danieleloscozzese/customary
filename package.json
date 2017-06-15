@@ -1,14 +1,12 @@
 {
   "name": "customary",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Prevents form submission after native validation has taken place.",
-  "main": "lib/jack.js",
+  "main": "dist/jack.js",
+  "types": "dist/jack.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "flow": "flow",
-    "build:transpile": "babel src --out-dir lib",
-    "build:type": "flow-copy-source -v src lib",
-    "build": "npm run build:transpile && npm run build:type",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -16,7 +14,8 @@
     "url": "git+https://github.com/DanArthurGallagher/customary.git"
   },
   "keywords": [
-    "front-end"
+    "front-end",
+    "typescript"
   ],
   "author": "Daniel Arthur Gallagher",
   "license": "ISC",
@@ -24,19 +23,10 @@
     "url": "https://github.com/DanArthurGallagher/customary/issues"
   },
   "homepage": "https://github.com/DanArthurGallagher/customary#readme",
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.4.0",
-    "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.45.0",
-    "flow-copy-source": "^1.1.0"
+  "dependencies": {
+    "rely-on": "^3.0.0"
   },
-  "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 1 Safari version",
-    "last 1 iOS version",
-    "last 1 Samsung version",
-    "last 1 Edge version"
-  ]
+  "devDependencies": {
+    "typescript": "^2.4.0"
+  }
 }
