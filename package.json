@@ -6,8 +6,10 @@
   "types": "dist/jack.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier './{src,test}/**/*.ts' --write",
+    "prebuild": "rimraf dist",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,11 @@
   },
   "homepage": "https://github.com/DanArthurGallagher/customary#readme",
   "dependencies": {
-    "rely-on": "^3.0.0"
+    "rely-on": "^3.0.1"
   },
   "devDependencies": {
-    "typescript": "^2.4.0"
+    "prettier": "1.8.2",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.6.1"
   }
 }
