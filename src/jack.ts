@@ -1,4 +1,4 @@
-import { relyOn } from 'rely-on';
+import relyOn from '@danarthurgallagher/rely-on';
 
 /**
  * Sets up a form with an event listener on the submit event that prevents
